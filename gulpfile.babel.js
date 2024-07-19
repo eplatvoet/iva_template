@@ -35,15 +35,67 @@ const gulp        = require('gulp'),
 	// ## REPLACE
 	zips  = [
 		{
-			'name':'home_slide',
+			'name':'playground1',
 			'title':'Home'
+		},
+		{
+			'name':'playground2',
+			'title':'Accordion'
+		},
+		{
+			'name':'playground3',
+			'title':'Carousel'
+		},
+		{
+			'name':'playground4',
+			'title':'Cards'
+		},
+		{
+			'name':'playground5',
+			'title':'Video'
+		},
+		{
+			'name':'playground6',
+			'title':'Progress'
+		},
+		{
+			'name':'playground7',
+			'title':'Show/Hide'
+		},
+		{
+			'name':'playground8',
+			'title':'Lottie'
+		},
+		{
+			'name':'playground9',
+			'title':'Tabs'
+		},
+		{
+			'name':'playground10',
+			'title':'Calculator'
+		},
+		{
+			'name':'playground11',
+			'title':'Chapterized Video'
+		},
+		{
+			'name':'playground12',
+			'title':'Resource Library: Scrollable'
+		},
+		{
+			'name':'playground13',
+			'title':'Resource Library: Tabbed'
+		},
+		{
+			'name':'playground14',
+			'title':'PDF Library'
 		}
 	],
 	pdfs  = [
-		{
-			'name':'test_pdf_slide',
-			'title': 'PDF'
-		}
+		// {
+		// 	'name':'test_pdf_slide',
+		// 	'title': 'PDF'
+		// }
 	],
 	csvWriter = createCsvWriter({
 		path: './build/veeva_multichannel_loader.csv',

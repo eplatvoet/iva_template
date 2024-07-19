@@ -8,11 +8,20 @@ var global = {
 	cE: function cE(){
 		global.navLinks     = $('.nav-link');
 		global.slideLinks   = {
-			'cover': 'overview_cover_slide_2021.zip',
-			'cover-v2': 'overview_cover_slide_2021_v2.zip',
-			'benefits': 'overview_livalo_benefits_slide_2021.zip',
-			'ten-reasons': 'overview_ten-reasons_slide_2021.zip',
-			'competitor-summaries': 'overview_competitor-summaries_slide_2021.zip'
+			'pg1': 'playground1.zip',
+			'pg2': 'playground2.zip',
+			'pg3': 'playground3.zip',
+			'pg4': 'playground4.zip',
+			'pg5': 'playground5.zip',
+			'pg6': 'playground6.zip',
+			'pg7': 'playground7.zip',
+			'pg8': 'playground8.zip',
+			'pg9': 'playground9.zip',
+			'pg10': 'playground10.zip',
+			'pg11': 'playground11.zip',
+			'pg12': 'playground12.zip',
+			'pg13': 'playground13.zip',
+			'pg14': 'playground14.zip',
 		};
 	},
 	eL: function eL(){
