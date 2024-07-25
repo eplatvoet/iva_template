@@ -1,0 +1,12 @@
+.slide-content-wrapper{
+    position:relative;
+    background-color: $teal;
+    .bg-img{
+        position: absolute;
+        width: 100vw;
+    }
+    .content-wrap{
+        background-color: $white;
+        padding: 2vw;
+    }
+}
