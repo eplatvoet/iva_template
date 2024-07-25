@@ -1,17 +1,19 @@
 extends ../templates/base
 
-//- block vars 
-//-     var page_title = "Home"
-//-     var topNav = pg1 
-//-     var refs
-//-     var extra_modals = true
-//-     var extra_js = false
+block vars 
+    - var page_title = "Home"
+    - var page_class = "pg1"
+    - var top_nav = "pg1" 
+    - var refs = ""
+    - var extra_modals = false
+    - var extra_js = false
      
 
 block content
     div.slide-content-wrapper 
-        img(src='' class='bg-img')
+        img(src='./assets/images/background.jpg' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 IVA Template 
+            p This template contains basic elements for a Veeva CLM Presentation.
 
 
