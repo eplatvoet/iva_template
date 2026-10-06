@@ -1,16 +1,37 @@
 extends ../templates/base
 
 block vars 
-    - var page_title = "Home"
-    - var page_class = ""
-    - var top_nav = "pg1" 
+    - var page_title = "Accordion Slide"
+    - var page_class = "playground-main accordion"
+    - var btm_nav = "pg2" 
     - var refs = ""
     - var extra_modals = false
-    - var extra_js = false
+    //- - var extra_js = true
      
 
 block content
     div.slide-content-wrapper 
-        img(src='' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 Accordion
+            h2 This slide shows an example of an accordion feature.
+            div.accordion-wrap 
+                div.section-title.title-1 
+                    h3 Section 1
+                    div.section-content.content-1 
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod iste eius, vel voluptas fugiat vitae omnis blanditiis in maiores, magni quam repellat unde libero aliquid quas dolore nemo facere? Illum?
+                div.section-title.title-2 
+                    h3 Section 2
+                    div.section-content.content-2 
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias reprehenderit enim aspernatur totam delectus animi voluptate illum deleniti beatae unde, iste id dolor accusantium similique laudantium doloribus in sequi.
+                div.section-title.title-3 
+                    h3 Section 3
+                    div.section-content.content-3 
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate veniam, sed dignissimos vero assumenda accusantium quidem aperiam ullam corporis culpa facilis tempore deleniti voluptatem enim neque laboriosam quas est? Distinctio.
+                div.section-title.title-4
+                    h3 Section 4
+                    div.section-content.content-4
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente earum doloribus eum consequatur minus quos repellat tenetur voluptates ut explicabo animi soluta eius ab, saepe beatae expedita rerum blanditiis dicta!
+                div.section-title.title-5 
+                    h3 Section 5
+                    div.section-content.content-5
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quibusdam distinctio quasi deserunt repudiandae reiciendis nisi est quisquam voluptate? Nobis voluptates a repudiandae itaque nesciunt placeat adipisci voluptatum aliquid dolores!
