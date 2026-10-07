@@ -1,23 +1,35 @@
 .bottom-nav {
 	width: 100vw;
-	height: 100px;
-	background-color: #c0c0c0;
+	height: 5.8vh;
+	background-color: $navy;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	border-top: 1px solid #282828;
+	// border-top: 1px solid $lightBlue;
 	.flex-nav-wrapper {
 		display: flex;
 		flex-flow: row nowrap;
-		justify-content: flex-start;
+		justify-content: flex-end;
 		align-content: center;
 		align-items: center;
-		padding: 0 60px;
+		padding: 0 5.9vw;
 		height: 100%;
 		.flex-item {
-			padding-right: 40px;
-			&:last-of-type {
-				padding-right: 0;
+			padding: 0 2.2vw;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			// &:last-of-type {
+			// 	padding-right: 0;
+			// }
+			p{
+				color: $white;
+			}
+			&.active{
+				background-color: $darkRed;
+				p{
+					font-weight: 700;
+				}
 			}
 		}
 	}

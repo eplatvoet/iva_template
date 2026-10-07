@@ -1,6 +1,6 @@
 footer {
   position: absolute;
-  bottom: 100px;
+  bottom: 5.8vh;
   left: 0;
   width: 100vw;
   z-index: 100;
@@ -14,9 +14,8 @@ footer {
     justify-content: stretch;
     align-content: flex-start;
     align-items: flex-start;
-    max-height: 14vh;
+    max-height: 14.6vh;
     overflow: hidden;
-    border-top: 1px solid #282828;
     transition: max-height 0.75s linear;
     background-color: $white;
     &.show-isi {
@@ -57,18 +56,18 @@ footer {
           position: absolute;
           right: 0;
           top: 0;
-          background-color: #CF1346;
+          background-color: $red;
           color: $white;
-          font-family: Arial, sans-serif;
+          font-family: $fontRegular;
           text-decoration: none;
           text-align: center;
           box-sizing: border-box;
           font-size: 1.75rem;
           span {
             color: $white;
-            font-family: Arial, sans-serif;
+            font-family: $fontRegular;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1.125rem;
           }
           img {
             display: inline;

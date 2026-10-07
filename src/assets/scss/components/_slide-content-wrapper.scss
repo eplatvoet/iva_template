@@ -1,12 +1,19 @@
 .slide-content-wrapper{
-    position:relative;
-    background-color: $teal;
+    height: 73.8vh;
+    background: #070E40;
+    background: linear-gradient(90deg,rgba(34, 203, 245, 1) 0%, rgba(45, 107, 158, 1) 50%, rgba(7, 14, 64, 1) 100%);
+    padding: 2vw;
+    overflow: hidden;
     .bg-img{
         position: absolute;
         width: 100vw;
+        z-index: -1;
     }
     .content-wrap{
         background-color: $white;
-        padding: 2vw;
+        padding: 1.5vw;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
     }
 }

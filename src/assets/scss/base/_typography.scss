@@ -1,7 +1,40 @@
 html, body {
-    font-size: 16px;
+    font-size: 1rem;
+    color: $navy;
 }
-
+h1{
+    font-family: $fontTitle;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0;
+}
+h2{
+    font-family: $fontTitle;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin: 0;
+}
+h3{
+    font-family: $fontTitle;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+    margin: 0;
+    line-height: 1.1;
+}
+p{
+    font-family: $fontRegular;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.1;
+}
 span {
     &.no-break {
         white-space: nowrap;
@@ -18,12 +51,13 @@ ul {
     display: table;
     list-style: none;
     li {
-        font-size: 1.6rem ;
-        line-height: 1.2;
+        font-size: 1rem;
+        line-height: 1.1;
         margin: 0.5vh 0 ;
-        padding-bottom : 5px;
+        padding-bottom : .5vh;
         display: table;
         font-weight: normal;
+        font-family: $fontRegular;
         &:before {
             display: table-cell;
             padding: 2px 10px 0 0;
@@ -31,6 +65,9 @@ ul {
             font-size: 1.5rem;
             line-height: 1;
             vertical-align: text-top;
+        }
+        &:last-of-type{
+            padding-bottom: 0;
         }
     }
 }
@@ -59,4 +96,8 @@ sub {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.underline{
+    text-decoration:underline;
 }
