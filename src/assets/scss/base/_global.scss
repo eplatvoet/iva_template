@@ -86,6 +86,12 @@ body {
 .mt-40{
     margin-top: 40px;
 }
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
 /*------------------------------------*\
     GLOBAL CLASSES: FONT SIZES
 \*------------------------------------*/
@@ -110,11 +116,20 @@ body {
     &.space-between{
         justify-content: space-between;
     }
+    &.space-around{
+        justify-content: space-around
+    }
+    &.space-evenly{
+        justify-content: space-evenly;
+    }
     &.justify-center{
         justify-content: center;
     }
     &.align-center{
         align-items: center;
+    }
+    &.column{
+        flex-direction: column;
     }
 }
 
