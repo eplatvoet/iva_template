@@ -7,7 +7,14 @@ iva = {
 		isi.init();
 		// Initiate Modals JS functionality
 		modals.init();
-		if ($('main').hasClass('tabbed-slide')){
+
+		if ($('body').hasClass('accordion')){
+			accordion.init();
+		}
+		if ($('body').hasClass('carousel')){
+			carousel.init();
+		}
+		if ($('body').hasClass('tabbed-slide')){
 			tabs.init();
 		}
 	}

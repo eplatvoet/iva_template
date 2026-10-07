@@ -1,0 +1,45 @@
+// PLAYGROUND 3 SLIDE
+.carousel{
+    .slide-content-wrapper{
+        .content-wrap{
+            .outer-carousel-wrap{
+                padding: 4vw;
+                .carousel-content-wrap{
+                    border: 1px solid $red;
+                    border-radius: 25px;
+                    padding: 3.5vw 3.5vw 0;
+                    height: 38vh;
+                    .carousel-content{
+                        display: none;
+                        width:100%;
+                        &.show{
+                            display: block;
+                        }
+                    }
+                }
+                .carousel-bullets{
+                    .cc-bull{
+                        color: $red;
+                        font-size: 2rem;
+                        padding: 1vw;
+                        &::before{
+                            content: '●';
+                        }
+                        &.active{
+                            // font-size:2rem;
+                            &::before{
+                                content: '○';
+                            }
+                        }
+                    }
+                }
+                .carousel-triggers{
+                    .carousel-trigger{
+                        padding: 1vw;
+                        margin: 0 3vw;
+                    }
+                }
+            }
+        }
+    }
+}
