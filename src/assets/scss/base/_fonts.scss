@@ -1,64 +1,49 @@
 @font-face {
-  font-family: 'OpenSans';
-  src:  local('OpenSans-Regular'),
-  local('OpenSans'),
-  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Anton';
+  src: url('../fonts/Anton-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ProximaNovaCondensed-Medium';
-  src: url('../fonts/ProximaNovaCond-Medium.otf') format('opentype');
-  font-weight: normal;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ProximaNovaCondensed-BoldIt';
-  src: url('../fonts/ProximaNovaCond-BoldIt.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ProximaNovaCondensed-Bold';
-  src: url('../fonts/ProximaNovaCond-Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ProximaNova-Bold';
-  src: url('../fonts/ProximaNova-Bold.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ProximaNova-Regular';
-  src: url('../fonts/ProximaNova-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans-Italic';
-  src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Italic.ttf') format('truetype');
+  font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'OpenSans-SemiBold';
-  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-SemiBold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
 }
 
