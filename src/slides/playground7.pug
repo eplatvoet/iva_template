@@ -11,6 +11,55 @@ block vars
 
 block content
     div.slide-content-wrapper 
-        img(src='' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 Show-Hide Slide
+            h2.mt-10 This slide shows an example of items being shown &/or hidden.
+            div.outer-show-hide-wrapper.flex-wrapper.space-evenly.mt-40
+                div.left-block
+                    img(src='./assets/images/cycle-chart.png')
+                div.right-block 
+                    p.mb-10.italic Tap number to expand further details
+                    div.expand-all-trigger 
+                        img(src='./assets/images/expand-all-icon.svg')
+                        p.reg-blue.bold Expand all
+                    div.step-content-wrap.step1 
+                        div.sh-trigger.trigger-1#trigger1 
+                            img(src='./assets/images/icon-1.svg')
+                            p.fs-20.bold.reg-blue Step 1 
+                        div.step-content 
+                            ul 
+                                li Lorem ipsum dolor 
+                                li Sit amet consectetur 
+                                li Fuga sint minima alias 
+                    div.step-content-wrap.step2 
+                        div.sh-trigger.trigger-2#trigger2 
+                            img(src='./assets/images/icon-2.svg')
+                            p.fs-20.bold.reg-blue Step 2 
+                        div.step-content 
+                            ul 
+                                li Ab excepturi voluptatibus
+                                li Illo repellat 
+                    div.step-content-wrap.step3 
+                        div.sh-trigger.trigger-3#trigger3 
+                            img(src='./assets/images/icon-3.svg')
+                            p.fs-20.bold.reg-blue Step 3 
+                        div.step-content 
+                            ul 
+                                li Quae fugit laborum 
+                    div.step-content-wrap.step4 
+                        div.sh-trigger.trigger-4#trigger4 
+                            img(src='./assets/images/icon-4.svg')
+                            p.fs-20.bold.reg-blue Step 4 
+                        div.step-content 
+                            ul 
+                                li Ieos repelvero q
+                                li Rempore consequuntur
+                    div.step-content-wrap.step5 
+                        div.sh-trigger.trigger-5#trigger5 
+                            img(src='./assets/images/icon-5.svg')
+                            p.fs-20.bold.reg-blue Step 5 
+                        div.step-content 
+                            ul 
+                                li Quasi iusto cupiditate
+                                li Adipisicing elit 
+                                       

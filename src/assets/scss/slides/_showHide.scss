@@ -1,0 +1,35 @@
+// PLAYGROUND 7 SLIDE
+.show-hide{
+    .outer-show-hide-wrapper{
+        .right-block{
+            .expand-all-trigger{
+                display:flex;
+                align-items: center;
+                p{
+                    padding-left: .5vh;
+                }
+            }
+            .step-content-wrap{
+                margin: 1vh 0;
+                .sh-trigger{
+                    display:flex;
+                    p{
+                        padding-left: 1vh;
+                    }
+                }
+                .step-content{
+                    opacity: 0;
+                    height: 0;
+                    &.show{
+                        opacity: 1;
+                        height: max-content;
+                        // transition: .5s height opacity;
+                    }
+                    ul{
+                        padding-left: 1vh;
+                    }
+                }
+            }
+        }
+    }
+}
