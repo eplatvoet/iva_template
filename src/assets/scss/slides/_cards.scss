@@ -1,0 +1,66 @@
+// PLAYGROUND 4 SLIDE
+.cards{
+    .slide-content-wrapper{
+        .content-wrap{
+            .outer-card-wrapper{
+                .card{
+                    flex-basis: 20%;
+                    position: relative;
+                    transform-style: preserve-3d;
+                    transition: transform 0.6s;
+                    border: 1px solid $regBlue;
+                    border-radius: 25px;
+                    padding: 1.5vw;
+                    height: 40vh;
+                    &.is-flipped{
+                        transform: rotateY(180deg);
+                    }
+                    .card-front,
+                    .card-back{
+                        backface-visibility: hidden;
+                        .card-title-wrap{
+                            display:flex;
+                            align-items: center;
+                            padding-bottom: 1vw;
+                            border-bottom: 1px solid $lightBlue;
+                            img{
+                                margin-right: .75vw;
+                            }
+                        }
+                    }
+                    .card-front .front-bottom, .card-back .back-bottom{
+                        padding-top: 1vw;
+                    }
+                    .card-back{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        padding: 1.5vw;
+                        transform: rotateY(180deg);
+                        .back-bottom{
+                            ul{
+                                margin: 0;
+                                li{
+                                    &:before {
+                                        padding: 0px 10px 0 0;
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .card-trigger{
+                        padding: 1vw;
+                        width: calc(100% - 3vw);
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
