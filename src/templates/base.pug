@@ -8,6 +8,8 @@ html
 		title THIS IVA | #{page_title}
 		meta(name="viewport" content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=no")
 		link(href="../shared/global-assets/styles/styles.css" rel="stylesheet" media="all")
+		if lottieAnimation
+			script(src='../shared/global-assets/js/lottie-player.js')
 	body(class=page_class)
 		div.wrapper
 			include ../partials/top-nav

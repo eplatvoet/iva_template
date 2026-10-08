@@ -6,11 +6,20 @@ block vars
     - var btm_nav = "pg8" 
     - var refs = ""
     - var extra_modals = false
+    - var lottieAnimation = true
     //- - var extra_js = false
      
 
 block content
     div.slide-content-wrapper 
-        img(src='' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 Lottie File Slide
+            h2.mt-10 This slide shows how a lottie file can be utilized for animations.
+            div.outer-lottie-content-wrap.flex-wrapper.mt-40.fifty-fifty
+                div.left-block.flex-wrapper.justify-center.align-center 
+                    <lottie-player src='./assets/images/circle-chart.json' background='Transparent' speed='1' style='width: 400px; height: 400px' direction='1' mode='normal' loop autoplay></lottie-player>
+                div.right-block.flex-wrapper.column.justify-center.align-center 
+                    <lottie-player src='./assets/images/small-chart.json' background='Transparent' speed='1' style='width: 200px; height: 200px' direction='1' mode='normal' loop autoplay></lottie-player>
+                    p.mt-10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat atque neque tenetur delectus odit totam voluptates distinctio. Neque in consequuntur est blanditiis deserunt obcaecati, fugiat fuga commodi asperiores dignissimos accusamus, eum debitis perferendis quam similique aut aliquid non dolorum!
+                    p.mt-10 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, corrupti, recusandae maxime accusantium optio dolore non perspiciatis cum quia reprehenderit unde itaque magnam mollitia.
+                    p.mt-10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis a expedita corrupti reiciendis quos ut sed temporibus atque perspiciatis! A rem iste, id velit ut et ipsa molestiae autem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam voluptas ipsa perspiciatis nisi in, cumque voluptatem. Ullam atque velit, tempora modi ipsum, labore, vitae adipisci magni autem aut dignissimos nam? 
