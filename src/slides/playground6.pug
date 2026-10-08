@@ -11,6 +11,23 @@ block vars
 
 block content
     div.slide-content-wrapper 
-        img(src='' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 Progression Slide 
+            h2.mt-10 This slide shows an example of an svg that animates with a button tap.
+            div.outer-progression-wrapper.mt-40 
+                div.progression-numbers.flex-wrapper.space-between 
+                    h3 Progress
+                    span#pct 0%
+                div(class="track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="bar")
+                    div.fill#fill 
+                div.buttons-wrapper
+                    div(class='button button-1' data-value='33')
+                        p.bold.white.fs-20 Stage 1
+                    div(class='button button-2' data-value='66')
+                        p.bold.white.fs-20 Stage 2
+                    div(class='button button-3' data-value='100')
+                        p.bold.white.fs-20 Stage 3
+                div.copy-wrapper.mt-40
+                    p <span class='bold'>Stage 1:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, numquam provident? Minus nisi libero repudiandae tempore odio laudantium facere perspiciatis numquam suscipit dignissimos, laboriosam a, velit, eligendi ab iste corporis?
+                    p.mt-10 <span class='bold'>Stage 2:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, maxime doloribus culpa ut laborum sequi beatae repellat? Assumenda sunt dolorem ut at temporibus. Autem sequi debitis facilis voluptatibus? Fugiat, totam.
+                    p.mt-10 <span class='bold'>Stage 2:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ullam ipsam aliquam maxime laboriosam non, necessitatibus laborum nam, nulla in rem pariatur ex facilis asperiores omnis sit vero quos nostrum?
