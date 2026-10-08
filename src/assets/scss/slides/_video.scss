@@ -1,0 +1,15 @@
+// PLAYGROUND 5 SLIDE 
+.video1{
+    .outer-video-wrapper{
+        .left-block video {
+            display: block;
+        }
+        .right-block{
+            .quote-wrapper{
+                background-color: $lightGray;
+                padding: 4vw;
+                height: 100%;
+            }
+        }
+    }
+}
