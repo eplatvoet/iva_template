@@ -1,0 +1,129 @@
+// PLAYGROUND 10 SLIDE
+.calculator{
+    .outer-calculator-wrap{
+        font-family: $fontRegular;
+        .button{
+            border-radius: 10px;
+            padding: .75vh .75vh;
+            text-align:center;
+        }
+        .panel.inputs{
+            padding: 2vh 4vh;
+            .lbl{
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $darkRed;
+                padding-bottom: .5vh;
+                margin-bottom: 2vh;
+                border-bottom: 1px solid $lightBlue;
+            }
+            #display{
+                flex-basis: 65%;
+                border: 1px solid $navy;
+                padding: .75vh;
+                font-size: 1.5rem;
+                border-radius: 5px;
+            }
+            #unit{
+                display:flex;
+                justify-content: space-evenly;
+                flex-basis: 35%;
+                .button.u-button{
+                    font-size: 1.5rem;
+                    color: $darkRed;
+                    background-color: $white;
+                    border: 1px solid $darkRed;
+                    padding: .75vh 3vh;
+                    font-weight: 700;
+                    &.on{
+                        background-color: $regBlue;
+                        color: $white;
+                        border: 1px solid $regBlue;
+                    }
+                }
+            }
+            #pad{
+                display: grid; 
+                grid-template-columns: repeat(3, 1fr); 
+                gap: 10px; 
+                margin: 2vh 0; 
+                .button.k-button{
+                    font-size: 1.5rem;
+                    color: $white;
+                    background-color: $darkRed;
+                    text-align:center;
+                    font-weight:bold;
+                }
+            }
+            #freq{
+                display:flex;
+                gap: 10px;
+                .button.f-button{
+                    flex-basis: 33%;
+                    font-size: 1.125rem;
+                    color: $darkRed;
+                    background-color: $white;
+                    border: 1px solid $darkRed;
+                    font-weight: 700;
+                    &.on{
+                        background-color: $regBlue;
+                        color: $white;
+                        border: 1px solid $regBlue;
+                    }
+                }
+            }
+        }
+        .panel.result{
+            padding: 2vh 4vh;
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
+            #empty{
+                font-size: 1rem;
+                font-style: italic;
+                color: $navy;
+            }
+            #out{
+                .big p#mg{
+                    font-size: 4.5rem;
+                    font-weight: bold;
+                    color: $darkRed;
+                    .small{
+                        color: $navy;
+                        font-size: 2.5rem;
+                    }
+                }
+                #basis{
+                    padding: .75vh 0;
+                }
+                .pair{
+                    .flex-wrapper.column:first-of-type{
+                        margin-right: 1.25vh;
+                    }
+                    p{
+                        font-size: 1.25rem;
+                    }
+                    p#ml, p#daily{
+                        font-size: 2.5rem;
+                    }
+                }
+                .note.show{
+                    margin: 3vh 0 0;
+                    padding: 1vh 1vh;
+                    color: $darkRed;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    font-style: italic;
+                    background-color: #f5014632;
+                }
+            }
+            .button.save{
+                padding: 1vh 3vh;
+                background-color: $navy;
+                font-size: 1.25rem;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+    }
+}

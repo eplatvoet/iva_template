@@ -11,6 +11,48 @@ block vars
 
 block content
     div.slide-content-wrapper 
-        img(src='' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 Calculator Slide
+            h2.mt-10 This slide shows an example of a dosing calculator tool.
+            p.mt-10.italic <span class='bold'>Please note:</span> Illustrative values only, not for clinical use. Real dosing must come from the approved prescribing information and be approved through your MLR process.
+            div.mt-40.outer-calculator-wrap.flex-wrapper.fifty-fifty 
+                div.panel.inputs.left-block 
+                    div.lbl Patient weight 
+                    div.flex-wrapper 
+                        div.display.ph#display Tap the number pad 
+                        div.seg#unit 
+                            div(class='on button u-button' data-u='kg') kg 
+                            div(class='button u-button' data-u='lb') lb 
+                    div.pad#pad 
+                        div(class='button k-button' data-k='1') 1
+                        div(class='button k-button' data-k='2') 2
+                        div(class='button k-button' data-k='3') 3
+                        div(class='button k-button' data-k='4') 4
+                        div(class='button k-button' data-k='5') 5
+                        div(class='button k-button' data-k='6') 6
+                        div(class='button k-button' data-k='7') 7
+                        div(class='button k-button' data-k='8') 8
+                        div(class='button k-button' data-k='9') 9
+                        div(class='button k-button' data-k='.') .
+                        div(class='button k-button' data-k='0') 0
+                        div(class='button k-button' data-k='back') Delete
+                    div.lbl Doses per day 
+                    div.freq#freq 
+                        div(class='button f-button' data-f='1') 1x/day 
+                        div(class='on button f-button' data-f='2') 2x/day 
+                        div(class='button f-button' data-f='3') 3x/day 
+                div(class='panel result right-block' aria-live='polite')
+                    div#empty.empty Enter a weight to see the dose 
+                    div(id='out' style='display:none')
+                        div.big 
+                            p#mg 0
+                        div.label#basis 
+                        div.pair.flex-wrapper 
+                            div.flex-wrapper.column 
+                                p.bold#ml 0 mL 
+                                p Suspension volume <br>per dose
+                            div.flex-wrapper.column 
+                                p.bold#daily 0 mg 
+                                p Total per day 
+                        div.note#note
+                    div(class='save button' id='save' disabled) Save to call               
