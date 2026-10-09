@@ -20,7 +20,7 @@ var tabs = {
     var content = $(tab).data('id');
     // remove classes from other tabs
     $('.tab-links.active').removeClass('active');
-    $('.tabbed-content.show').removeClass('show');
+    $('.tab-content.show').removeClass('show');
     $(tab).addClass('active');
     $('#'+content).addClass('show');
   }

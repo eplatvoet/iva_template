@@ -1,0 +1,33 @@
+.tabbed-content{
+    .outer-tab-wrapper{
+        .tab-links-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 2vw;
+            .tab-links{
+                flex-basis: 30%;
+                background-color: $lightGray;
+                border-radius: 20px;
+                border: 1px solid $darkRed;
+                padding: .75vw;
+                text-align:center;
+                &.active{
+                    background-color: $darkRed;
+                    p{
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .tab-content-wrap{
+            .tab-content{
+                display:none;
+                &.show{
+                    display:block;
+                    transition: all .25s ease;
+                }
+            }
+        }
+    }
+}

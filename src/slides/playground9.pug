@@ -11,6 +11,48 @@ block vars
 
 block content
     div.slide-content-wrapper 
-        img(src='' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 Tabbed Content Slide
+            h2.mt-10 This slide shows an example of tabbed content.
+            div.outer-tab-wrapper.mt-20 
+                div.tab-links-wrapper 
+                    div(class='tab-links active' data-id='tab1')
+                        p.dark-red.bold.fs-20 Tab 1
+                    div(class='tab-links' data-id='tab2')
+                        p.dark-red.bold.fs-20 Tab 2
+                    div(class='tab-links' data-id='tab3')
+                        p.dark-red.bold.fs-20 Tab 3
+                div.tab-content-wrap 
+                    div(class='tab-content show' id='tab1')
+                        h3 This is the content for the first tab on this slide. 
+                        p.mt-10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repellat assumenda laboriosam nisi sequi? Dolore repellendus iusto illum illo dignissimos veniam cum explicabo vitae, laborum dolor veritatis corrupti aut quidem?
+                        ul 
+                            li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, quasi iste eaque temporibus ipsam mollitia. 
+                            li Eveniet non minus vitae nisi? At molestias fugit sint inventore magnam nam debitis eos saepe.
+                        div.flex-wrapper.justify-center.mt-20 
+                            img(src='./assets/images/t1-chart.png')
+                    div(class='tab-content' id='tab2')
+                        h3 This is the content for the second tab on this slide. 
+                        div.flex-wrapper.space-evenly.align-center.mt-20 
+                            div.left-block 
+                                img(src='./assets/images/t2-chart.png')
+                            div.right-block 
+                                ul 
+                                    li Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut similique <br>sequi quidem, accusamus minima at sint explicabo nemo mollitia eos, <br>quis neque velit facilis earum consectetur magni illum eum. Veniam.
+                                    li Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae velit <br>voluptatum tempore, maxime voluptatibus aliquid quia iste quo eos <br>dolorum! Ipsum accusantium quis maiores minima eligendi magni <br>aut at reiciendis.
+                                    li Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias <br>molestiae labore id natus incidunt cum fugit neque numquam iure, <br>doloribus magni totam iusto eius praesentium vel harum. Sit, veniam. 
+                    div(class='tab-content' id='tab3')
+                        h3 This is the content for the third tab on this slide. 
+                        ul 
+                            li Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, mollitia, pariatur esse culpa voluptatibus vel debitis ratione obcaecati, doloribus odio tempora amet? Placeat asperiores in numquam magnam sed quibusdam temporibus.
+                            li Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium incidunt hic quae, assumenda aspernatur asperiores voluptatum excepturi voluptatem libero delectus id, sint neque laborum. Temporibus exercitationem architecto consectetur qui corporis.
+                        div.flex-wrapper.mt-20.justify-center.align-center 
+                            div.left-block 
+                                img(src='./assets/images/t3-chart.png')
+                            div.right-block
+                                ul 
+                                    li <span class='bold'>Group A:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste perspiciatis <br>numquam nihil quia enim velit. 
+                                    li <span class='bold'>Group B:</span> Nesciunt hic impedit iusto, corrupti, commodi inventore beatae deleniti <br>soluta ratione doloribus quasi iure molestiae?
+                                    li <span class='bold'>Group C:</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis nobis <br>pariatur, tempora sint porro ipsa voluptatem quaerat delectus.
+                                    li <span class='bold'>Group D:</span> Ab reiciendis eos adipisci totam fuga, architecto unde ad repudiandae <br>perferendis soluta?
+
