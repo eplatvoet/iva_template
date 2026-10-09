@@ -19,7 +19,7 @@ footer {
     transition: max-height 0.75s linear;
     background-color: $white;
     &.show-isi {
-      max-height: 100vh;
+      max-height: 88.4vh;
       transition: max-height 0.75s linear;
       z-index: 300;
       overflow: scroll;
@@ -45,8 +45,8 @@ footer {
         height: auto;
         text-align: right;
         .isi-button {
-          min-width: 9rem;
-          width: 9rem;
+          min-width: 6.5rem;
+          width: 6.5rem;
           min-height: auto;
           height: auto;
           padding: .75vh 1vw 1vh;
@@ -62,7 +62,7 @@ footer {
           text-decoration: none;
           text-align: center;
           box-sizing: border-box;
-          font-size: 1.75rem;
+          font-size: 1.125rem;
           span {
             color: $white;
             font-family: $fontRegular;
@@ -71,7 +71,7 @@ footer {
           }
           img {
             display: inline;
-            width: 1rem;
+            width: .875rem;
             height: auto;
             margin-left: 0.75vw;
             vertical-align: baseline;
@@ -89,7 +89,10 @@ footer {
         max-width: 95%;
         z-index: 200;
         background: $white;
-        padding: 1vh 2vw;
+        padding: 1vh 3vw 1vh 2vw;
+        h1{
+          font-size: 1.25rem;
+        }
       }
     }
   }

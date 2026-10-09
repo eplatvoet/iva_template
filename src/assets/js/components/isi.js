@@ -24,11 +24,13 @@ var isi = {
 	toggleIsi: function toggleIsi(){
 		if ( $(isi.isiFullWrapper).hasClass('show-isi')){
 			$(isi.isiFullWrapper).removeClass('show-isi');
+			$(isi.isiLink).removeClass('active')
 			$(isi.openBtnText).text('Open');
 			$(isi.closeBtnImg).addClass('hide');
 			$(isi.openBtnImg).removeClass('hide');
 			$(isi.isiFullWrapper).scrollTop(0);
 		} else {
+			$(isi.isiLink).addClass('active')
 			$(isi.isiFullWrapper).addClass('show-isi');
 			$(isi.openBtnText).text('Close');
 			$(isi.closeBtnImg).removeClass('hide');
