@@ -2,10 +2,10 @@ extends ../templates/base
 
 block vars 
     - var page_title = "Resources (Tabbed) Slide"
-    - var page_class = "playground-main resources resources-2"
+    - var page_class = "playground-main tabbed-content resources resources-2"
     - var btm_nav = "pg13"
     - var refs = ""
-    - var extra_modals = false
+    - var extra_modals = true
     //- - var extra_js = false
      
 
@@ -13,4 +13,68 @@ block content
     div.slide-content-wrapper 
         img(src='' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 Resource Library Slide
+            h2.mt-10 This is an example of a resource library that is laid out in tabs. Each resource card directs to a modal.
+            div.outer-tab-wrapper.mt-20 
+                div.tab-links-wrapper 
+                    div(class='tab-links active' data-id='tab1')
+                        p.dark-red.bold.fs-20 PDFs
+                    div(class='tab-links' data-id='tab2')
+                        p.dark-red.bold.fs-20 Videos
+                    div(class='tab-links' data-id='tab3')
+                        p.dark-red.bold.fs-20 Podcasts
+                div.tab-content-wrap 
+                    div(class='tab-content show' id='tab1')
+                        div.outer-resource-wrapper 
+                            div.resource-category-wrapper 
+                                h3 Resources -- PDFs 
+                                div.resource-cards-wrapper 
+                                    div(class='resource-card modal-link' data-overlay='resources-modal' data-resource-type='pdf' data-resource='pdf1')
+                                        img(src='../shared/global-assets/images/pdf-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title PDF 1
+                                        p.resource-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem quas velit quisquam ducimus omnis deserunt iste quidem? Libero itaque minus illum ipsam quo non molestiae, harum iste cupiditate dolorum!
+                                    div(class='resource-card modal-link' data-overlay='resources-modal' data-resource-type='pdf' data-resource='pdf2')
+                                        img(src='../shared/global-assets/images/pdf-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title PDF 2
+                                        p.resource-description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut iste eligendi, totam dicta, non, impedit fuga laboriosam asperiores officia nisi sed a harum quia quae minima doloremque similique quasi sit?
+                                    div(class='resource-card modal-link' data-overlay='resources-modal' data-resource-type='pdf' data-resource='pdf3')
+                                        img(src='../shared/global-assets/images/pdf-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title PDF 3
+                                        p.resource-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, saepe veniam. Voluptates exercitationem cumque animi eveniet laborum atque necessitatibus vel est optio at laboriosam debitis impedit dignissimos, dolores, ipsum quaerat.
+                    div(class='tab-content' id='tab2')
+                        div.outer-resource-wrapper
+                            div.resource-category-wrapper 
+                                h3 Resources -- Videos 
+                                div.resource-cards-wrapper 
+                                    div(class='resource-card modal-link' data-overlay='resources-modal' data-resource-type='video' data-resource='video1')
+                                        img(src='../shared/global-assets/images/video-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title Video 1
+                                        p.resource-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempore mollitia nulla impedit eaque, nihil voluptatibus quod necessitatibus veniam accusantium ab dolores voluptate sint consequatur incidunt perspiciatis! Aut, assumenda excepturi!
+                                    div(class='resource-card modal-link' data-overlay='resources-modal' data-resource-type='video' data-resource='video2')
+                                        img(src='../shared/global-assets/images/video-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title Video 2
+                                        p.resource-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui commodi alias similique, consequatur doloremque repellat eaque numquam atque hic consectetur nam quibusdam saepe doloribus exercitationem illum modi vitae minima.
+                                    div(class='resource-card modal-link' data-overlay='resources-modal' data-resource-type='video' data-resource='video3')
+                                        img(src='../shared/global-assets/images/video-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title Video 3
+                                        p.resource-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat saepe, voluptas esse voluptatum eos aperiam voluptate et molestiae sequi iste veritatis, enim rerum quod perspiciatis vero quibusdam ad pariatur illo.
+                    div(class='tab-content' id='tab3')
+                        div.outer-resource-wrapper
+                            div.resource-category-wrapper 
+                                h3 Resources -- Podcasts 
+                                div.resource-cards-wrapper 
+                                    div(class='resource-card modal-link' data-overlay='resources-modal' data-resource-type='podcast' data-resource='podcast1')
+                                        img(src='../shared/global-assets/images/podcast-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title Podcast 1
+                                        p.resource-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum minima porro debitis! Corrupti cum recusandae vero enim unde, sapiente error asperiores tempora non quas, fugit totam. Necessitatibus, maiores eveniet.
+                                    div(class='resource-card modal-link' data-overlay='resources-modal'  data-resource-type='podcast' data-resource='podcast2')
+                                        img(src='../shared/global-assets/images/podcast-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title Podcast 2
+                                        p.resource-description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae modi et deleniti culpa, non consequatur. Fugiat accusamus asperiores deleniti harum, voluptatum magni, non, quas sit aut nam assumenda nobis rerum?
+                                    div(class='resource-card modal-link' data-overlay='resources-modal'  data-resource-type='podcast' data-resource='podcast3')
+                                        img(src='../shared/global-assets/images/podcast-icon.svg')
+                                        p.bold.fs-20.reg-blue.resource-title Podcast 3
+                                        p.resource-description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore ipsam id cupiditate quaerat optio repudiandae placeat voluptates, nesciunt, autem neque soluta voluptatibus velit voluptate dignissimos, magnam eius voluptas explicabo alias.
+
+block extra_modals_code 
+    include ../partials/modals/resources
