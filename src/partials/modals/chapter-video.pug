@@ -1,0 +1,16 @@
+div(class="modal chapter-video-modal")
+    div.close
+        include ../../svgs/close-btn.svg
+    h1 Chaptered Video
+    div(class="content")
+        div.chaptered-video-wrapper-modal 
+            img(src='./assets/images/video-poster.png' id='playVideoModal' width='960' height='540')
+            video(id='chVideoModal' controls width='960' height='540' preload='auto')
+                source(src='./assets/videos/chapters-video.mp4' type='video/mp4')
+            div.ch-vid-btn-wrap-modal 
+                div(class='ch-vid-btn-modal' data-chapter='one')
+                    p.fs-20.bold.red.underline.italic Chapter 1
+                div(class='ch-vid-btn-modal' data-chapter='two')
+                    p.fs-20.bold.red.underline.italic Chapter 2
+                div(class='ch-vid-btn-modal' data-chapter='three')
+                    p.fs-20.bold.red.underline.italic Chapter 3

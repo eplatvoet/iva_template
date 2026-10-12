@@ -5,12 +5,28 @@ block vars
     - var page_class = "playground-main chap-video"
     - var btm_nav = "pg11" 
     - var refs = ""
-    - var extra_modals = false
+    - var extra_modals = true
     //- - var extra_js = false
      
 
 block content
     div.slide-content-wrapper 
-        img(src='' class='bg-img')
         div.content-wrap 
-            h1 Hello :)
+            h1 Chaptered Video Slide
+            h2.mt-10 This slide shows an example of a video that can be played in-line and includes buttons to specific timestamps in the video. 
+            div.chaptered-video-wrapper.relative.mt-20 
+                img(src='./assets/images/video-poster.png' id='playVideo' width='896' height='504')
+                video(id='chVideo' controls width='896' height='504' preload='auto')
+                    source(src='./assets/videos/chapters-video.mp4' type='video/mp4')
+                div.ch-vid-btn-wrap.mt-20 
+                    div(class='ch-vid-btn' data-chapter='one')
+                        p.fs-20.bold.red.underline.italic Chapter 1
+                    div(class='ch-vid-btn' data-chapter='two')
+                        p.fs-20.bold.red.underline.italic Chapter 2
+                    div(class='ch-vid-btn' data-chapter='three')
+                        p.fs-20.bold.red.underline.italic Chapter 3
+                div(class='modal-link enlarge-link' data-overlay='chapter-video-modal')
+                    img(src="../shared/global-assets/images/enlarge-modal.svg")
+
+block extra_modals_code
+    include ../partials/modals/chapter-video
