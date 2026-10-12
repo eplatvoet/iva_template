@@ -1,0 +1,18 @@
+.pdf-library{
+    .pdf-links-wrapper{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .pdf-slide-link{
+            flex-basis: 45%;
+            background-color: $navy;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid $lightBlue;
+            border-radius: 25px;
+            padding: 1.5vh 3vh;
+            margin: 0vh 0 2vh;
+        }
+    }
+}
