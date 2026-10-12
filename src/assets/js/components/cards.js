@@ -13,12 +13,6 @@ var cards = {
 			triggers.on('click', function(){
 				cards.toggle(card, triggers);
 			});
-			triggers.on('keydown', function(event){
-				if (event.which === 13 || event.which === 32){
-					event.preventDefault();
-					cards.toggle(card, triggers);
-				}
-			});
 		});
 	},
 	toggle: function toggle(card, triggers){

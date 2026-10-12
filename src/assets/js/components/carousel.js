@@ -40,18 +40,6 @@ var carousel = {
 				currentIndex = (currentIndex + 1) % slides.length;
 				carousel.showSlide(slides, bullets, currentIndex);
 			});
-			bullets.each(function(index){
-				$(this).on('click', function(){
-					currentIndex = index;
-					carousel.showSlide(slides, bullets, currentIndex);
-				});
-			});
-			triggers.add(bullets).on('keydown', function(event){
-				if (event.which === 13 || event.which === 32){
-					event.preventDefault();
-					$(this).trigger('click');
-				}
-			});
 		});
 	},
 	showSlide: function showSlide(slides, bullets, index){
