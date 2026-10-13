@@ -22,6 +22,14 @@ var global = {
 			'playground12': 'playground12.zip',
 			'playground13': 'playground13.zip',
 			'playground14': 'playground14.zip',
+			'playground15': 'playground15.zip',
+			'playground16': 'playground16.zip',
+			'pdf-library-1': 'pdf-library-1.zip',
+			'pdf-library-2': 'pdf-library-2.zip',
+			'pdf-library-3': 'pdf-library-3.zip',
+			'pdf-library-4': 'pdf-library-4.zip',
+			'pdf-library-5': 'pdf-library-5.zip',
+			'pdf-library-6': 'pdf-library-6.zip',
 		};
 	},
 	eL: function eL(){
