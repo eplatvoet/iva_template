@@ -58,16 +58,21 @@ ul {
         display: table;
         font-weight: normal;
         font-family: $fontRegular;
+        color: $navy;
         &:before {
             display: table-cell;
             padding: 2px 10px 0 0;
             content: "•";
-            font-size: 1.5rem;
-            line-height: 1;
+            font-size: 1.25rem;
+            line-height: 1.1rem;
             vertical-align: text-top;
+            color: $regBlue;
         }
         &:last-of-type{
             padding-bottom: 0;
+        }
+        &.small{
+            font-size: .875rem;
         }
     }
 }
@@ -100,4 +105,13 @@ sub {
 
 .underline{
     text-decoration:underline;
+}
+.bold{
+    font-weight: 700;
+}
+.italic{
+    font-style: italic;
+}
+.centered-text{
+    text-align: center;
 }

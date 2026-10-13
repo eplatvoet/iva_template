@@ -16,8 +16,8 @@
     }
 }
 .close {
-    height: 7.5vh;
-    width: 7vw;
+    height: 4rem;
+    width: 4rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -41,9 +41,9 @@
 
 .modal {
     position: absolute;
-    height: 81vh;
+    height: 84vh;
     width: 96vw;
-    top: 4.75vh;
+    top: 8vh;
     left: 2vw;
     margin: auto;
     background: $white;
@@ -52,7 +52,7 @@
     z-index: 350;
     pointer-events: all;
     visibility: hidden;
-    padding: 7.5vh 4vw;
+    padding: 5.5vh 4vw;
 
     &.show {
         opacity: 1;
@@ -68,6 +68,69 @@
                 height: auto;
                 width: 100%;
                 max-width: 100%;
+            }
+        }
+    }
+    &.chapter-video-modal{
+        .chaptered-video-wrapper-modal{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            margin: 3rem 0;
+            #playVideoModal {
+                &.hide {
+                    display: none;
+                }
+            }
+            #chVideoModal {
+                display: none;
+                &.show {
+                    display: block;
+                }
+            }
+            .ch-vid-btn-wrap-modal{
+                display:flex;
+                .ch-vid-btn-modal{
+                    padding: 0 2rem;
+                    margin: 2rem 1rem;
+                }
+            }
+        }
+    }
+    &.resources-modal{
+        .outer-resource-wrapper-modal{
+            margin-top: 3vh;
+            height: 64vh;
+        }
+        &.rpdf-modal{
+            .outer-resource-wrapper-modal{
+                overflow: scroll;
+                .img-wrapper{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        &.rv-modal{
+            .outer-resource-wrapper-modal{
+                .video-wrapper{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                }
+            }
+        }
+        &.rp-modal{
+            .outer-resource-wrapper-modal{
+                .podcast-wrapper{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+
+                }
             }
         }
     }

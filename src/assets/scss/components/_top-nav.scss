@@ -11,12 +11,18 @@
 		padding: 0 7.3vw 0 11vw;
 		height: 100%;
 		.flex-item {
+			height: 100%;
+			display:flex;
+			align-items:center;
 			padding: 0 2.2vw;
 			// &:last-of-type {
 			// 	padding-right: 0;
 			// }
 			p{
 				color: $white;
+			}
+			&.active{
+				background-color: $navy;
 			}
 		}
 	}
