@@ -1,0 +1,27 @@
+extends ../templates/base
+
+block vars 
+    - var page_title = "Email Slide"
+    - var page_class = "playground-main email"
+    - var btm_nav = "pg15" 
+    - var refs = ""
+    - var extra_modals = false
+    //- - var extra_js = false
+     
+
+block content
+    div.slide-content-wrapper 
+        div.content-wrap 
+            h1 Email Slide
+            h2.mt-10 This slide shows an example of sending a Veeva RTE.
+            div.outer-email-wrapper.mt-40 
+                div.flex-wrapper.fifty-fifty 
+                    div.left-block 
+                        p.mb-10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eum culpa molestias eaque reprehenderit nesciunt explicabo necessitatibus voluptas beatae eveniet, facilis harum natus reiciendis ipsam laboriosam? Repudiandae error recusandae veritatis!
+                        img(src='./assets/images/chart.png')
+                        p.mt-10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, reiciendis, asperiores officia repellendus consequatur, aperiam optio minus mollitia necessitatibus temporibus similique molestiae aspernatur! Molestias, iusto facilis! Voluptatibus obcaecati quae error, ad odit id accusantium sint illum architecto officiis repellendus quod.
+                        p.mt-10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, esse. Nostrum ratione facere fugit repellendus id iusto quasi obcaecati. Mollitia quaerat sed adipisci sapiente ullam aliquid porro ducimus reprehenderit voluptatibus.
+                    div.right-block 
+                        div.sendEmailBtn#sendEmailBtn 
+                            p.white.fs-24.bold Send RTE 
+                            img(src='../shared/global-assets/images/email-icon.svg')
