@@ -89,13 +89,41 @@ const gulp        = require('gulp'),
 		{
 			'name':'playground14',
 			'title':'PDF Library'
+		},
+		{
+			'name':'playground15',
+			'title':'Emails: RTE'
+		},
+		{
+			'name':'playground16',
+			'title':'Emails: RTE + EFs'
 		}
 	],
 	pdfs  = [
-		// {
-		// 	'name':'test_pdf_slide',
-		// 	'title': 'PDF'
-		// }
+		{
+			'name':'pdf-library-1',
+			'title': 'PDF 1'
+		},
+		{
+			'name':'pdf-library-2',
+			'title': 'PDF 2'
+		},
+		{
+			'name':'pdf-library-3',
+			'title': 'PDF 3'
+		},
+		{
+			'name':'pdf-library-4',
+			'title': 'PDF 4'
+		},
+		{
+			'name':'pdf-library-5',
+			'title': 'PDF 5'
+		},
+		{
+			'name':'pdf-library-6',
+			'title': 'PDF 6'
+		}
 	],
 	csvWriter = createCsvWriter({
 		path: './build/veeva_multichannel_loader.csv',
@@ -268,7 +296,18 @@ function scripts(){
 		console.log("JAVASCRIPT STARTED!");
 		gulp.src([
 			'./src/assets/js/lib/veeva.js',
+			'./src/assets/js/lib/lottie-player.js',
+			'./src/assets/js/components/accordion.js',
+			'./src/assets/js/components/cards.js',
+			'./src/assets/js/components/carousel.js',
+			'./src/assets/js/components/progression.js',
+			'./src/assets/js/components/showHide.js',
 			'./src/assets/js/components/tabs.js',
+			'./src/assets/js/components/calculator.js',
+			'./src/assets/js/components/chapVideo.js',
+			'./src/assets/js/components/resourceLibrary.js',
+			'./src/assets/js/components/email.js',
+			'./src/assets/js/components/emailFragments.js',
 			'./src/assets/js/components/isi.js',
 			'./src/assets/js/components/modals.js',
 			'./src/assets/js/global.js',
@@ -345,6 +384,28 @@ function images(){
 			.pipe(gulp.dest('build/'+ pdf.name));
 		});
 		console.log('IMAGES COMPLETED!');
+		resolve();
+	});
+}
+
+/*
+ * MOVE IMAGES (including thumb images )...
+ */
+function videos(){
+	return new Promise(function(resolve, reject) {
+		console.log('VIDEOS STARTED!');
+		zips.map(function (zip) {
+			console.log('BUILDING ', zip.name);
+			gulp.src('src/assets/videos/global/**/*')
+				// FOR LOCAL USE ONLY
+				.pipe(gulp.dest('build/shared/global-assets/videos/'))  // CHANGE THIS
+				// FOR VAULT USE
+				.pipe(gulp.dest('build/global-assets/global-assets/videos/'));  // CHANGE THIS
+			gulp.src('src/assets/videos/' + zip.name + '/**/*')
+				// FOR VAULT & LOCAL USE
+				.pipe(gulp.dest('build/'+ zip.name +'/assets/videos'))
+		});
+		console.log('VIDEOS COMPLETED!');
 		resolve();
 	});
 }
@@ -513,6 +574,7 @@ exports.styles        = styles;
 exports.scripts       = scripts;
 exports.pdf           = pdf;
 exports.images        = images;
+exports.videos 		  = videos;
 exports.fonts         = fonts;
 exports.createRecords = createRecords;
 exports.watch         = watch;
@@ -520,7 +582,7 @@ exports.watch         = watch;
 /*
  * MUST USE THIS TO BUILD FOR VAULT - includes build of vault csv file
  */
-let build = gulp.series(gulp.parallel(clean, pugFiles, styles, scripts, pdf, images, fonts, createRecords));
+let build = gulp.series(gulp.parallel(clean, pugFiles, styles, scripts, pdf, images, videos, fonts, createRecords));
 
 gulp.task('default', build);
 

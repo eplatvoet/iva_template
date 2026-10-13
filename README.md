@@ -1,14 +1,31 @@
 # Veeva CLM Base Repo
 This is a base app template build for the Veeva CRM platform.  This will compile all slides AND build the packages for upload to the Veeva platform for you (see gulp commands below).
 
+## Slides
+| Slide Name | Slide Description |
+| ----------- | ----------- |
+| playground1 | Home |
+| playground2 | Accordion |
+| playground3 | Carousel |
+| playground4 | Cards |
+| playground5 | Video |
+| playground6 | Progression |
+| playground7 | Show/Hide |
+| playground8 | Lottie files |
+| playground9 | Tabbed Content |
+| playground10 | Calculator |
+| playground11 | Chaptered Video |
+| playground12 | Resources (Scroll) |
+| playground13 | Resources (Tabbed) |
+| playground14 | PDF Library |
 
 ## Requirements
 
 * NodeJS
 * npm
     * Use **NVM** for your node versioning
-        * nvm install 11.15
-        * nvm use 11.15
+        * nvm install --lts
+        * nvm use --lts
 * Gulp v4.0 -- recommended to be installed globally
     * `sudo npm install --global gulp`
 
