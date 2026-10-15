@@ -18,6 +18,9 @@ This is a base app template build for the Veeva CRM platform.  This will compile
 | playground12 | Resources (Scroll) |
 | playground13 | Resources (Tabbed) |
 | playground14 | PDF Library |
+| playground15 | Email |
+| playground16 | RTE w/ Fragments |
+
 
 ## Requirements
 
